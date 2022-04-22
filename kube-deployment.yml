@@ -61,7 +61,7 @@ metadata:
   annotations:
     rafay.dev/registry-ky554g2: public-docker-hub-registry
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: words-api
