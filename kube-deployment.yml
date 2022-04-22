@@ -19,6 +19,8 @@ metadata:
   name: db
   labels:
     app: words-db
+  annotations:
+    rafay.dev/registry-ky554g2: public-docker-hub-registry
 spec:
   selector:
     matchLabels:
@@ -56,6 +58,8 @@ metadata:
   name: words
   labels:
     app: words-api
+  annotations:
+    rafay.dev/registry-ky554g2: public-docker-hub-registry
 spec:
   replicas: 5
   selector:
@@ -94,6 +98,8 @@ metadata:
   name: web
   labels:
     app: words-web
+  annotations:
+    rafay.dev/registry-ky554g2: public-docker-hub-registry
 spec:
   selector:
     matchLabels:
